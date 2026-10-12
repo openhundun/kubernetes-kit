@@ -8,6 +8,7 @@ RUN \
     echo "${TARGET}" > /target-triple
 WORKDIR /app
 COPY Cargo.toml Cargo.toml
+COPY source/flector/Cargo.toml source/flector/Cargo.toml
 COPY source/fork-mesh/Cargo.toml source/fork-mesh/Cargo.toml
 RUN \
     TARGET="$(cat /target-triple)" && \
