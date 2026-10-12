@@ -8,7 +8,7 @@ readonly GIT_REPOSITORY_URL="https://github.com/openhundun/kubernetes-kit"
 readonly GIT_REPOSITORY_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 function help() {
-    echo "USAGE: ${0} <job__check [step__xxx | all] | job__image [step__xxx | all] | job__chart [step__xxx | all] | job__e2e [step__xxx | all]>"
+    echo "USAGE: ${0} <job__check | job__image | job__chart | job__e2e> [step__xxx]"
 }
 
 function job__check() {

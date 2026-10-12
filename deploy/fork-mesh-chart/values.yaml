@@ -1,0 +1,5 @@
+image:
+  registry: ghcr.io
+  repository: openhundun/fork-mesh
+  tag: 0.0.1
+  pullPolicy: IfNotPresent
