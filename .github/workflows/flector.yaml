@@ -60,6 +60,7 @@ jobs:
           version: v1.36.5+k3s1
           k3d-args: "--no-lb --no-rollback"
           k3s-args: "--disable=local-storage,metrics-server,servicelb,traefik@server:*"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: bash script/flector.sh job__e2e step__install
       - run: bash script/flector.sh job__e2e step__test__configmap_created
       - run: bash script/flector.sh job__e2e step__test__configmap_updated
